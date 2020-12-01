@@ -1,0 +1,5 @@
+<h3>Lista</h3>
+ 
+<div *ngFor="let todo of items | async" class="list">
+  <app-todo-item [todo]='todo'></app-todo-item>
+</div>

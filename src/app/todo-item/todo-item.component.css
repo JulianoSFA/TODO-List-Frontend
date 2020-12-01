@@ -1,0 +1,24 @@
+label{
+    color: #9f64ff;
+    font-size: 18px;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+button{
+    float: right;
+    background-color: whitesmoke;
+    border: 1px solid #969696;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(102, 221, 112);
+}

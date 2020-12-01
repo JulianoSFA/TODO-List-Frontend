@@ -1,0 +1,14 @@
+<div *ngIf="todo">
+  <div class="view" *ngIf='!editMode'>
+    <input class="toggle" *ngIf='!todo.status' type="checkbox" (click)="updateItem(true)" [checked]="todo.status">
+    <span class="dot" *ngIf='todo.status'></span>
+    <label >{{todo.description}}</label>
+    <button class="destroy" (click)="deleteItem()">Deletar</button>
+    <button class="edit" *ngIf='!todo.status' (click)="editMode = true">Editar</button>
+  </div>
+  <div class="edit" *ngIf='editMode'>
+    <input #edit placeholder="">
+    <button class="makeEdit" (click)="editMode = false">X</button>
+    <button class="makeEdit" (click)="updateDescription(edit.value)">Confirmar</button>
+  </div>
+  <hr/>
